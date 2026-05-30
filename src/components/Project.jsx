@@ -1,4 +1,5 @@
 import { useLanguage } from '../context/LanguageContext';
+import blackoutDevice from '../assets/blackout-device.png';
 
 export default function Project() {
   const { lang } = useLanguage();
@@ -9,7 +10,7 @@ export default function Project() {
       <div className="project-image-wrap" data-label={t('PROYECTO FINAL', 'FINAL PROJECT')}>
         <img
           className="device-img"
-           src="/src/assets/blackout-device.png"
+          src={blackoutDevice}
           alt={t('Dispositivo inhibidor de radiofrecuencia — Blackout 1', 'Radio frequency jamming device — Blackout 1')}
         />
         <div className="image-scanlines"></div>
